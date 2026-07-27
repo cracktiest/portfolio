@@ -1,0 +1,15 @@
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

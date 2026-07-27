@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autonomous Robot Fleet Management System | Rizki Saputra Sembiring</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;scroll-behavior:smooth;}
+body{background:#050816;color:white;line-height:1.7;}
+.container{width:90%;max-width:1100px;margin:auto;}
+header{padding:90px 0;background:linear-gradient(rgba(5,8,22,.92),rgba(5,8,22,.94)),url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1600&auto=format&fit=crop") center/cover;}
+.badge{display:inline-block;padding:8px 18px;border-radius:20px;background:#00ffff20;color:#5cf4ff;margin-bottom:20px;font-weight:600;}
+h1{font-size:54px;font-weight:800;margin-bottom:20px;}
+.subtitle{font-size:20px;color:#b8c2d4;max-width:800px;}
+.buttons{margin-top:40px;display:flex;gap:15px;flex-wrap:wrap;}
+.btn{padding:14px 24px;border-radius:14px;font-weight:700;text-decoration:none;transition:.3s;}
+.primary{background:#00ffff;color:black;}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white;}
+.btn:hover{transform:translateY(-3px);} 
+section{padding:80px 0;}
+h2{font-size:34px;margin-bottom:25px;}
+.card{background:#0e162b;padding:35px;border-radius:22px;border:1px solid rgba(255,255,255,.08);margin-bottom:30px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax:280px,1fr));gap:25px;}
+.stat{padding:30px;background:#111b31;border-radius:18px;text-align:center;}
+.stat h3{font-size:42px;color:#00ffff;}
+.timeline{border-left:3px solid #00ffff;padding-left:25px;}
+.timeline div{margin-bottom:35px;}
+.timeline h3{color:#00ffff;margin-bottom:10px;}
+.tech{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px;}
+.tech span{padding:8px 14px;border-radius:12px;background:#00ffff15;color:#7dfbff;}
+footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#94a3b8;}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="badge">Industrial Robotics • Fleet Management System</div>
+<h1>Autonomous Robot Fleet Management System</h1>
+<p class="subtitle">Led the second-stage development of the factory’s Autonomous Mobile Robot (AMR) ecosystem by building a custom fleet management platform for real-time monitoring, operational analytics, and integration with factory workflows.</p>
+<div class="buttons">
+<a href="../../index.html#projects" class="btn primary">← Back to Portfolio</a>
+<a href="#details" class="btn secondary">Project Details</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<div class="grid">
+<div class="stat"><h3>Real-Time</h3><p>Robot Monitoring</p></div>
+<div class="stat"><h3>SDK</h3><p>Robot Integration</p></div>
+<div class="stat"><h3>n8n</h3><p>Telegram Dispatch</p></div>
+</div>
+</div>
+</section>
+
+<section id="details">
+<div class="container">
+<h2>Overview</h2>
+<div class="card">
+<p>After gaining access to the robot SDK and API, I led the second-stage development of the factory’s AMR ecosystem. The project focused on building a custom fleet management dashboard that enabled real-time robot monitoring, operational analytics, and system integration with existing factory workflows.</p>
+</div>
+
+<h2>Challenge</h2>
+<div class="card">
+<ul>
+<li>The standard robot management software provided limited flexibility for factory-specific workflows.</li>
+<li>Production teams needed a centralized platform for robot locations, task status, charging activity, operational history, and fleet performance.</li>
+<li>Integration with internal manufacturing systems was necessary to support real operational use.</li>
+</ul>
+</div>
+
+<h2>Solution</h2>
+<div class="card">
+<div class="timeline">
+<div>
+<h3>Fleet Management Architecture</h3>
+Designed the architecture for a web-based fleet management platform that could communicate directly with the robot fleet using SDK and REST API integration.
+</div>
+<div>
+<h3>Real-Time Dashboard</h3>
+Developed a dashboard for live robot locations, operational status, task history, charging status, idle time, and mission tracking.</div>
+<div>
+<h3>Factory Workflow Integration</h3>
+Enabled dispatch of robots from external applications and connected the platform with manufacturing workflows.</div>
+<div>
+<h3>Telegram Dispatch Support</h3>
+Supported chat-based robot dispatch through Telegram using n8n integration developed by a team member.</div>
+</div>
+</div>
+
+<h2>Result</h2>
+<div class="card">
+<ul>
+<li>Developed a custom real-time robot fleet management dashboard.</li>
+<li>Integrated directly with robot SDK and REST APIs.</li>
+<li>Displayed live robot locations on factory maps.</li>
+<li>Monitored task duration, charging duration, and idle duration.</li>
+<li>Recorded movement history and operational logs.</li>
+<li>Established the software foundation for future robot automation and third-party integrations.</li>
+</ul>
+</div>
+
+<h2>Scope of Contribution</h2>
+<div class="card">
+<h3>My Contributions</h3>
+<ul>
+<li>Led the second-stage robotics integration project.</li>
+<li>Integrated the robot SDK and API into the factory system.</li>
+<li>Designed the fleet management architecture.</li>
+<li>Developed the real-time monitoring dashboard.</li>
+<li>Implemented robot monitoring and operational analytics.</li>
+<li>Coordinated integration between robotics and manufacturing systems.</li>
+<li>Collaborated with team members on automation workflow development.</li>
+</ul>
+<br>
+<h3>Team Contributions</h3>
+<ul>
+<li>Telegram-based robot dispatch via n8n developed by a junior engineer.</li>
+<li>Additional workflow automation and operational enhancements.</li>
+</ul>
+</div>
+
+<h2>Conclusion</h2>
+<div class="card">
+<p>This project represented the transition from robot deployment to full robotics system integration. By utilizing the robot SDK and APIs, the team transformed standalone autonomous robots into a connected fleet that could be monitored, managed, and integrated with factory operations through a custom-built platform.</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Rizki Saputra Sembiring • Robotics & AI Engineer
+</footer>
+</body>
+</html>

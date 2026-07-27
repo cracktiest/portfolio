@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Industrial Sewing Automation | Rizki Saputra Sembiring</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+header{
+
+padding:90px 0;
+background:
+linear-gradient(rgba(5,8,22,.92),rgba(5,8,22,.94)),
+url("https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1600&auto=format&fit=crop")
+center/cover;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+border-radius:20px;
+background:#00ffff20;
+color:#5cf4ff;
+margin-bottom:20px;
+font-weight:600;
+}
+
+h1{
+
+font-size:54px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.subtitle{
+
+font-size:20px;
+color:#b8c2d4;
+max-width:800px;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 24px;
+border-radius:14px;
+font-weight:700;
+text-decoration:none;
+transition:.3s;
+}
+
+.primary{
+
+background:#00ffff;
+color:black;
+}
+
+.secondary{
+
+border:1px solid rgba(255,255,255,.15);
+color:white;
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+}
+
+section{
+
+padding:80px 0;
+}
+
+h2{
+
+font-size:34px;
+margin-bottom:25px;
+}
+
+.card{
+
+background:#0e162b;
+padding:35px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,.08);
+margin-bottom:30px;
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.stat{
+
+padding:30px;
+background:#111b31;
+border-radius:18px;
+text-align:center;
+}
+
+.stat h3{
+
+font-size:42px;
+color:#00ffff;
+}
+
+.timeline{
+
+border-left:3px solid #00ffff;
+padding-left:25px;
+}
+
+.timeline div{
+
+margin-bottom:35px;
+}
+
+.timeline h3{
+
+color:#00ffff;
+margin-bottom:10px;
+}
+
+.tech{
+
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:25px;
+}
+
+.tech span{
+
+padding:8px 14px;
+border-radius:12px;
+background:#00ffff15;
+color:#7dfbff;
+}
+
+footer{
+
+padding:40px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+color:#94a3b8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="badge">
+Industrial Automation
+</div>
+
+<h1>
+Industrial Sewing Automation Platform
+</h1>
+
+<p class="subtitle">
+
+Development of an automated sewing workstation by integrating an industrial programmable sewing machine, pneumatic actuators, custom fixtures, sensors, and Arduino-based control systems. The solution significantly reduced equipment investment while improving productivity and process consistency.
+
+</p>
+
+<div class="buttons">
+
+<a href="../../index.html#projects" class="btn primary">
+? Back to Portfolio
+</a>
+
+<a href="#details" class="btn secondary">
+Project Details
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="stat">
+<h3>&lt;100M</h3>
+<p>Total Development Cost</p>
+</div>
+
+<div class="stat">
+<h3>˜75%</h3>
+<p>Lower Investment Cost</p>
+</div>
+
+<div class="stat">
+<h3>2024</h3>
+<p>Project Started</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="details">
+
+<div class="container">
+
+<h2>Overview</h2>
+
+<div class="card">
+
+<p>
+
+This project began as an internal engineering initiative to automate a repetitive sewing process.
+
+Instead of purchasing a dedicated automation machine, an existing programmable sewing platform was redesigned and enhanced using pneumatic systems, Arduino-based controllers, mechanical fixtures, and custom control logic.
+
+</p>
+
+<br>
+
+<p>
+
+The resulting workstation successfully automated multiple manual operations while maintaining sewing quality and improving production consistency.
+
+The project later became the foundation for several additional automation initiatives within the manufacturing department.
+
+</p>
+
+</div>
+
+<h2>Engineering Challenges</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Integrating pneumatic actuators with existing industrial equipment.</li>
+
+<li>Synchronizing mechanical movements with sewing cycles.</li>
+
+<li>Designing reliable interlocks for operator safety.</li>
+
+<li>Developing embedded firmware for real-time sequence control.</li>
+
+<li>Optimizing timing between sensors, cylinders and servo mechanisms.</li>
+
+<li>Reducing implementation cost without sacrificing reliability.</li>
+
+</ul>
+
+</div>
+
+<h2>System Architecture</h2>
+
+<div class="card">
+
+<div class="timeline">
+
+<div>
+
+<h3>Mechanical Design</h3>
+
+Custom brackets, fixtures, pneumatic cylinders, guides and workpiece holders.
+
+</div>
+
+<div>
+
+<h3>Embedded Controller</h3>
+
+Arduino firmware controlling valves, sensors, servo motors and sequencing logic.
+
+</div>
+
+<div>
+
+<h3>Pneumatic System</h3>
+
+Multiple solenoid valves coordinating workpiece clamping and positioning.
+
+</div>
+
+<div>
+
+<h3>Industrial Machine Integration</h3>
+
+Synchronization with the programmable sewing machine through digital I/O signals.
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Technologies</h2>
+
+<div class="card">
+
+<div class="tech">
+
+<span>Arduino Mega</span>
+
+<span>C++</span>
+
+<span>Pneumatic System</span>
+
+<span>Servo Control</span>
+
+<span>Industrial Automation</span>
+
+<span>Embedded System</span>
+
+<span>Mechanical Design</span>
+
+<span>Digital I/O</span>
+
+</div>
+
+</div>
+
+<h2>Impact</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Reduced capital expenditure by approximately 75% compared with dedicated commercial equipment.</li>
+
+<li>Improved operator consistency and repeatability.</li>
+
+<li>Initiated broader collaboration between Robotics and Production Engineering teams.</li>
+
+<li>Inspired multiple follow-up automation projects across manufacturing processes.</li>
+
+<li>Contributed to recognition through an internal innovation award in 2024.</li>
+
+</ul>
+
+</div>
+
+<h2>Engineering Notes</h2>
+
+<div class="card">
+
+<p>
+
+Specific machine brands, production parameters, electrical schematics, and proprietary control algorithms have been intentionally omitted due to confidentiality agreements.
+
+The information presented focuses on engineering methodology, system integration, and project outcomes.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Rizki Saputra Sembiring • Robotics & AI Engineer
+
+</footer>
+
+</body>
+</html>

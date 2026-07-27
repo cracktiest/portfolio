@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTP Machine Speed Control & Length Monitoring System | Rizki Saputra Sembiring</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;scroll-behavior:smooth;}
+body{background:#050816;color:white;line-height:1.7;}
+.container{width:90%;max-width:1100px;margin:auto;}
+header{padding:90px 0;background:linear-gradient(rgba(5,8,22,.92),rgba(5,8,22,.94)),url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop") center/cover;}
+.badge{display:inline-block;padding:8px 18px;border-radius:20px;background:#00ffff20;color:#5cf4ff;margin-bottom:20px;font-weight:600;}
+h1{font-size:54px;font-weight:800;margin-bottom:20px;}
+.subtitle{font-size:20px;color:#b8c2d4;max-width:800px;}
+.buttons{margin-top:40px;display:flex;gap:15px;flex-wrap:wrap;}
+.btn{padding:14px 24px;border-radius:14px;font-weight:700;text-decoration:none;transition:.3s;}
+.primary{background:#00ffff;color:black;}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white;}
+.btn:hover{transform:translateY(-3px);} 
+section{padding:80px 0;}
+h2{font-size:34px;margin-bottom:25px;}
+.card{background:#0e162b;padding:35px;border-radius:22px;border:1px solid rgba(255,255,255,.08);margin-bottom:30px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax:280px,1fr));gap:25px;}
+.stat{padding:30px;background:#111b31;border-radius:18px;text-align:center;}
+.stat h3{font-size:42px;color:#00ffff;}
+.timeline{border-left:3px solid #00ffff;padding-left:25px;}
+.timeline div{margin-bottom:35px;}
+.timeline h3{color:#00ffff;margin-bottom:10px;}
+.tech{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px;}
+.tech span{padding:8px 14px;border-radius:12px;background:#00ffff15;color:#7dfbff;}
+footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#94a3b8;}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="badge">Industrial Automation • Control System</div>
+<h1>CTP Machine Speed Control & Length Monitoring System</h1>
+<p class="subtitle">Developed a closed-loop control system for a CTP sweetener machine to automatically regulate motor speed and monitor processed paper length in real time.</p>
+<div class="buttons">
+<a href="../../index.html#projects" class="btn primary">← Back to Portfolio</a>
+<a href="#details" class="btn secondary">Project Details</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<div class="grid">
+<div class="stat"><h3>Closed-Loop</h3><p>Motor Control</p></div>
+<div class="stat"><h3>Real-Time</h3><p>Length Monitoring</p></div>
+<div class="stat"><h3>SD Card</h3><p>Production Logging</p></div>
+</div>
+</div>
+</section>
+
+<section id="details">
+<div class="container">
+<h2>Overview</h2>
+<div class="card">
+<p>Developed a closed-loop control system for a CTP sweetener machine to automatically regulate motor speed and monitor processed paper length in real time. The system was designed to improve stable operation and provide better insight into machine performance during production.</p>
+</div>
+
+<h2>Challenge</h2>
+<div class="card">
+<ul>
+<li>The existing machine had no automatic speed regulation.</li>
+<li>There was no system to monitor processed paper length in real time.</li>
+<li>Production data was not recorded, making performance evaluation difficult.</li>
+<li>Stable operation under changing conditions was hard to maintain manually.</li>
+</ul>
+</div>
+
+<h2>Solution</h2>
+<div class="card">
+<div class="timeline">
+<div>
+<h3>Encoder Feedback</h3>
+Used rotary encoder feedback to measure motor speed and the processed paper length accurately.</div>
+<div>
+<h3>Closed-Loop Control</h3>
+The controller adjusted motor speed through a Variable Speed Drive (VSD) to maintain stable operation.</div>
+<div>
+<h3>Data Logging</h3>
+Production data was recorded to an SD card for performance analysis and monitoring.</div>
+</div>
+</div>
+
+<h2>Result</h2>
+<div class="card">
+<ul>
+<li>Successfully implemented automatic motor speed control.</li>
+<li>Enabled real-time monitoring of processed paper length.</li>
+<li>Recorded production data for machine performance analysis.</li>
+<li>Demonstrated consistent machine performance under different operating conditions.</li>
+</ul>
+</div>
+
+<h2>Conclusion</h2>
+<div class="card">
+<p>This project expanded my expertise from basic machine automation to feedback control systems, strengthening my understanding of embedded systems, industrial motor control, and machine monitoring.</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Rizki Saputra Sembiring • Robotics & AI Engineer
+</footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.fade{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.profile-image:hover{
+
+    transform:scale(1.05);
+
+}

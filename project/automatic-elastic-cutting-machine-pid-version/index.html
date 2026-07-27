@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatic Elastic Cutting Machine (PID Version) | Rizki Saputra Sembiring</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;scroll-behavior:smooth;}
+body{background:#050816;color:white;line-height:1.7;}
+.container{width:90%;max-width:1100px;margin:auto;}
+header{padding:90px 0;background:linear-gradient(rgba(5,8,22,.92),rgba(5,8,22,.94)),url("../../elastic_cutter.jpg") center/cover;}
+.badge{display:inline-block;padding:8px 18px;border-radius:20px;background:#00ffff20;color:#5cf4ff;margin-bottom:20px;font-weight:600;}
+h1{font-size:54px;font-weight:800;margin-bottom:20px;}
+.subtitle{font-size:20px;color:#b8c2d4;max-width:800px;}
+.buttons{margin-top:40px;display:flex;gap:15px;flex-wrap:wrap;}
+.btn{padding:14px 24px;border-radius:14px;font-weight:700;text-decoration:none;transition:.3s;}
+.primary{background:#00ffff;color:black;}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white;}
+.btn:hover{transform:translateY(-3px);} 
+.hero-image-card{margin-top:30px;max-width:700px;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 20px 45px rgba(0,0,0,.25);} 
+.hero-image-card img{display:block;width:100%;height:auto;max-height:380px;object-fit:cover;} 
+section{padding:80px 0;}
+h2{font-size:34px;margin-bottom:25px;}
+.card{background:#0e162b;padding:35px;border-radius:22px;border:1px solid rgba(255,255,255,.08);margin-bottom:30px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+.stat{padding:30px;background:#111b31;border-radius:18px;text-align:center;}
+.stat h3{font-size:42px;color:#00ffff;}
+.timeline{border-left:3px solid #00ffff;padding-left:25px;}
+.timeline div{margin-bottom:35px;}
+.timeline h3{color:#00ffff;margin-bottom:10px;}
+.tech{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px;}
+.tech span{padding:8px 14px;border-radius:12px;background:#00ffff15;color:#7dfbff;}.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:18px;margin-top:20px;background:#111b31;border:1px solid rgba(255,255,255,.08);}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#94a3b8;}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="badge">Motion Control • Industrial Automation</div>
+<h1>Automatic Elastic Cutting Machine (PID Version)</h1>
+<p class="subtitle">Redesigned the automatic elastic cutting machine by replacing the previous open-loop motion system with a closed-loop PID control algorithm. The new system utilizes encoder feedback to precisely control material feeding, resulting in higher cutting accuracy and improved positioning stability during continuous production.</p>
+<div class="hero-image-card">
+<img src="../../elastic_cutter.jpg" alt="Elastic cutting machine photo">
+</div>
+<div class="buttons">
+<a href="../../index.html#projects" class="btn primary">← Back to Portfolio</a>
+<a href="#details" class="btn secondary">Project Details</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<div class="grid">
+<div class="stat"><h3>PID</h3><p>Closed-Loop Control</p></div>
+<div class="stat"><h3>Encoder</h3><p>Position Feedback</p></div>
+<div class="stat"><h3>Infrared</h3><p>Remote Control</p></div>
+</div>
+</div>
+</section>
+
+<section id="details">
+<div class="container">
+<h2>Overview</h2>
+<div class="card">
+<p>The first-generation version of the elastic cutting machine relied on step calculations to estimate feeding distance. Although it worked for basic automation, mechanical slip, load variation, and accumulated positioning errors reduced accuracy during longer production runs.</p>
+<br>
+<p>This upgraded version replaced the open-loop method with a closed-loop motion control system using encoder feedback and PID control to continuously correct the motor movement before the cutting action is executed.</p>
+</div>
+
+<h2>What the image shows</h2>
+<div class="card">
+<p>The project image illustrates the elastic cutting machine in operation, showing the cutting mechanism and the overall machine layout used during production. In this context, the photo represents the real industrial environment where precision motion and stable response are critical, especially when the machine must cut elastics consistently and repeatedly.</p>
+<p style="margin-top:12px;">Visually, the image helps communicate that the project is not only about control logic but also about applying PID-based motion control in a physical machine that must respond quickly and accurately under real operating conditions.</p>
+</div>
+
+<h2>Challenge</h2>
+<div class="card">
+<ul>
+<li>Open-loop stepping caused positioning errors during long production runs.</li>
+<li>Mechanical slip and load variation affected feeding accuracy.</li>
+<li>Cutting consistency became less reliable under continuous operation.</li>
+<li>The machine interface needed to be simplified for easier operator use.</li>
+</ul>
+</div>
+
+<h2>Solution</h2>
+<div class="card">
+<div class="timeline">
+<div>
+<h3>Closed-Loop PID Control</h3>
+A PID controller continuously adjusts motor movement based on encoder feedback to reach the target feeding length accurately.
+</div>
+<div>
+<h3>Encoder Feedback</h3>
+Quadrature encoder feedback provides real-time position data for precise motion correction.</div>
+<div>
+<h3>Improved Motion Stability</h3>
+The system reduces positioning error caused by mechanical variation and slip during production.</div>
+<div>
+<h3>Infrared Remote Interface</h3>
+The operator interface was upgraded from keypad input to an infrared remote controller for simpler configuration and operation.</div>
+</div>
+</div>
+
+<h2>Result</h2>
+<div class="card">
+<ul>
+<li>Improved feeding accuracy through encoder-based position feedback.</li>
+<li>Reduced positioning errors caused by mechanical variations and material slip.</li>
+<li>Achieved smoother and more stable motor movement using PID control.</li>
+<li>Increased cutting consistency during continuous production.</li>
+<li>Simplified machine operation with an infrared remote interface.</li>
+</ul>
+</div>
+
+<h2>PID response time reference</h2>
+<div class="card">
+<p>For reference, this video shows an example of motion response behavior that is relevant to evaluating PID response time in cutting or positioning systems.</p>
+<div class="video-wrap">
+<iframe src="https://www.youtube.com/embed/1axm2ZDe1Jo" title="PID response time reference for elastic cutting machine" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<p style="margin-top:12px;">You can also open the video directly at <a href="https://youtu.be/1axm2ZDe1Jo" style="color:#5cf4ff;">https://youtu.be/1axm2ZDe1Jo</a>.</p>
+</div>
+
+<h2>Technologies</h2>
+<div class="card">
+<div class="tech">
+<span>Motion Control</span>
+<span>PID Control</span>
+<span>Encoder Feedback</span>
+<span>Industrial Automation</span>
+<span>Embedded System</span>
+<span>Infrared Remote</span>
+<span>Pneumatic Actuator</span>
+</div>
+</div>
+
+<h2>Conclusion</h2>
+<div class="card">
+<p>This project represented a significant evolution from the first-generation elastic cutting machine by introducing closed-loop motion control. It strengthened my understanding of PID control, encoder feedback systems, motion control algorithms, and precision machine automation.</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Rizki Saputra Sembiring • Robotics & AI Engineer
+</footer>
+</body>
+</html>

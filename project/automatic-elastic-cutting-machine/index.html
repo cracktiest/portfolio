@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatic Elastic Cutting Machine | Rizki Saputra Sembiring</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;scroll-behavior:smooth;}
+body{background:#050816;color:white;line-height:1.7;}
+.container{width:90%;max-width:1100px;margin:auto;}
+header{padding:90px 0;background:linear-gradient(rgba(5,8,22,.92),rgba(5,8,22,.94)),url("https://images.unsplash.com/photo-1581092919535-9aa8c1227347?q=80&w=1600&auto=format&fit=crop") center/cover;}
+.badge{display:inline-block;padding:8px 18px;border-radius:20px;background:#00ffff20;color:#5cf4ff;margin-bottom:20px;font-weight:600;}
+h1{font-size:54px;font-weight:800;margin-bottom:20px;}
+.subtitle{font-size:20px;color:#b8c2d4;max-width:800px;}
+.buttons{margin-top:40px;display:flex;gap:15px;flex-wrap:wrap;}
+.btn{padding:14px 24px;border-radius:14px;font-weight:700;text-decoration:none;transition:.3s;}
+.primary{background:#00ffff;color:black;}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white;}
+.btn:hover{transform:translateY(-3px);} 
+section{padding:80px 0;}
+h2{font-size:34px;margin-bottom:25px;}
+.card{background:#0e162b;padding:35px;border-radius:22px;border:1px solid rgba(255,255,255,.08);margin-bottom:30px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+.stat{padding:30px;background:#111b31;border-radius:18px;text-align:center;}
+.stat h3{font-size:42px;color:#00ffff;}
+.timeline{border-left:3px solid #00ffff;padding-left:25px;}
+.timeline div{margin-bottom:35px;}
+.timeline h3{color:#00ffff;margin-bottom:10px;}
+.tech{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px;}
+.tech span{padding:8px 14px;border-radius:12px;background:#00ffff15;color:#7dfbff;}
+footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#94a3b8;}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="badge">Industrial Automation • Embedded System</div>
+<h1>Automatic Elastic Cutting Machine</h1>
+<p class="subtitle">Developed an automatic elastic cutting machine to replace the manual cutting process in garment production. The machine automatically feeds elastic material, cuts it to a predefined length, and repeats the process based on the required production quantity.</p>
+<div class="buttons">
+<a href="../../index.html#projects" class="btn primary">← Back to Portfolio</a>
+<a href="#details" class="btn secondary">Project Details</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<div class="grid">
+<div class="stat"><h3>Auto</h3><p>Elastic Feeding</p></div>
+<div class="stat"><h3>Step</h3><p>Motor Control</p></div>
+<div class="stat"><h3>EEPROM</h3><p>Power Recovery</p></div>
+</div>
+</div>
+</section>
+
+<section id="details">
+<div class="container">
+<h2>Overview</h2>
+<div class="card">
+<p>This project was developed to replace the manual elastic cutting process in garment manufacturing. The machine automatically feeds elastic material, cuts it to a predefined length, and repeats the process according to the required production quantity.</p>
+<br>
+<p>The system was designed as an embedded automation platform with a keypad interface, LCD display, stepper motor control, and pneumatic actuator-based cutting mechanism.</p>
+</div>
+
+<h2>Challenge</h2>
+<div class="card">
+<ul>
+<li>The existing process relied on manual cutting, causing inconsistent lengths.</li>
+<li>Low productivity and high operator workload affected daily output.</li>
+<li>Production interruptions due to sudden power loss created process instability.</li>
+</ul>
+</div>
+
+<h2>Solution</h2>
+<div class="card">
+<div class="timeline">
+<div>
+<h3>Embedded Control System</h3>
+An embedded controller manages the machine sequence, cut length, and production quantity.
+</div>
+<div>
+<h3>Stepper Motor Feeding</h3>
+The feeding mechanism is driven by a stepper motor to ensure precise elastic movement.
+</div>
+<div>
+<h3>Pneumatic Cutting Actuator</h3>
+A pneumatic actuator performs the cutting action automatically with repeatable motion.
+</div>
+<div>
+<h3>Keypad & LCD Interface</h3>
+Operators can configure cutting length and quantity, while progress is shown on an LCD.
+</div>
+<div>
+<h3>EEPROM Recovery</h3>
+The system restores unfinished production after power interruptions, increasing reliability.</div>
+</div>
+</div>
+
+<h2>Result</h2>
+<div class="card">
+<ul>
+<li>Improved cutting consistency and repeatability.</li>
+<li>Reduced manual intervention and operator workload.</li>
+<li>Increased overall production reliability with recovery after power loss.</li>
+<li>Provided valuable hands-on experience in embedded systems and industrial automation design.</li>
+</ul>
+</div>
+
+<h2>Technologies</h2>
+<div class="card">
+<div class="tech">
+<span>Embedded System</span>
+<span>Stepper Motor</span>
+<span>Pneumatic Actuator</span>
+<span>Keypad Interface</span>
+<span>LCD Display</span>
+<span>EEPROM</span>
+<span>Industrial Automation</span>
+<span>Automation Control</span>
+</div>
+</div>
+
+<h2>Conclusion</h2>
+<div class="card">
+<p>This project marked my first industrial automation development experience, strengthening my knowledge in machine sequencing, hardware integration, control logic, and practical automation system design.</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Rizki Saputra Sembiring • Robotics & AI Engineer
+</footer>
+</body>
+</html>

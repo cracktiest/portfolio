@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operator Production Monitoring System | Rizki Saputra Sembiring</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;scroll-behavior:smooth;}
+body{background:#050816;color:white;line-height:1.7;}
+.container{width:90%;max-width:1100px;margin:auto;}
+header{padding:90px 0;background:linear-gradient(rgba(5,8,22,.92),rgba(5,8,22,.94)),url("https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop") center/cover;}
+.badge{display:inline-block;padding:8px 18px;border-radius:20px;background:#00ffff20;color:#5cf4ff;margin-bottom:20px;font-weight:600;}
+h1{font-size:54px;font-weight:800;margin-bottom:20px;}
+.subtitle{font-size:20px;color:#b8c2d4;max-width:800px;}
+.buttons{margin-top:40px;display:flex;gap:15px;flex-wrap:wrap;}
+.btn{padding:14px 24px;border-radius:14px;font-weight:700;text-decoration:none;transition:.3s;}
+.primary{background:#00ffff;color:black;}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white;}
+.btn:hover{transform:translateY(-3px);} 
+section{padding:80px 0;}
+h2{font-size:34px;margin-bottom:25px;}
+.card{background:#0e162b;padding:35px;border-radius:22px;border:1px solid rgba(255,255,255,.08);margin-bottom:30px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+.stat{padding:30px;background:#111b31;border-radius:18px;text-align:center;}
+.stat h3{font-size:42px;color:#00ffff;}
+.timeline{border-left:3px solid #00ffff;padding-left:25px;}
+.timeline div{margin-bottom:35px;}
+.timeline h3{color:#00ffff;margin-bottom:10px;}
+.tech{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px;}
+.tech span{padding:8px 14px;border-radius:12px;background:#00ffff15;color:#7dfbff;}
+footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#94a3b8;}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="badge">Industrial IoT • Production Monitoring</div>
+<h1>Operator Production Monitoring System</h1>
+<p class="subtitle">Developed an IoT-based production monitoring system to collect real-time operator output and production status in garment manufacturing. The system integrates RFID authentication, wireless remote controls, and Wi-Fi communication to provide live production data, downtime tracking, and operator performance monitoring through a centralized server.</p>
+<div class="buttons">
+<a href="../../index.html#projects" class="btn primary">← Back to Portfolio</a>
+<a href="#details" class="btn secondary">Project Details</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<div class="grid">
+<div class="stat"><h3>IoT</h3><p>Real-Time Monitoring</p></div>
+<div class="stat"><h3>RFID</h3><p>Operator Authentication</p></div>
+<div class="stat"><h3>Wi-Fi</h3><p>Central Server Sync</p></div>
+</div>
+</div>
+</section>
+
+<section id="details">
+<div class="container">
+<h2>Overview</h2>
+<div class="card">
+<p>This project was developed to digitize operator production reporting in garment manufacturing. Previously, production data was recorded manually, making it hard to monitor productivity, identify delays, and analyze downtime across sewing lines.</p>
+<br>
+<p>The solution connects embedded devices, wireless remotes, and a web server to capture real-time production events and provide supervisors with immediate visibility into operator output and line performance.</p>
+</div>
+
+<h2>Challenge</h2>
+<div class="card">
+<ul>
+<li>Manual production recording caused delayed and inconsistent reporting.</li>
+<li>Supervisors lacked real-time visibility into operator productivity.</li>
+<li>Downtime events were difficult to classify and analyze.</li>
+<li>Production delays and machine status were not visible quickly enough for corrective action.</li>
+</ul>
+</div>
+
+<h2>Solution</h2>
+<div class="card">
+<div class="timeline">
+<div>
+<h3>RFID Authentication</h3>
+Operators identify themselves using RFID cards before production begins, ensuring accurate operator tracking.
+</div>
+<div>
+<h3>Wireless Remote Control</h3>
+Production output is recorded through a wireless remote during operation.
+</div>
+<div>
+<h3>Downtime Reporting</h3>
+Dedicated remote buttons allow operators to report downtime reasons such as machine breakdown, technical support, material shortage, personal needs, and layout changes.
+</div>
+<div>
+<h3>ESP8266 + Wi-Fi Communication</h3>
+The embedded device communicates with a central web server over Wi-Fi for real-time synchronization.
+</div>
+<div>
+<h3>LCD & RGB LED Feedback</h3>
+Operators receive immediate visual feedback through an LCD display and RGB LED status indicator.</div>
+</div>
+</div>
+
+<h2>Result</h2>
+<div class="card">
+<ul>
+<li>Successfully digitized operator production reporting.</li>
+<li>Enabled real-time monitoring of operator output and status.</li>
+<li>Implemented automatic downtime classification using remote input.</li>
+<li>Reduced manual reporting effort and improved data accuracy.</li>
+<li>Provided supervisors with production visibility and historical records for analysis.</li>
+</ul>
+</div>
+
+<h2>Technologies</h2>
+<div class="card">
+<div class="tech">
+<span>Industrial IoT</span>
+<span>ESP8266</span>
+<span>Wi-Fi Communication</span>
+<span>RFID</span>
+<span>Wireless Remote</span>
+<span>Embedded System</span>
+<span>Production Monitoring</span>
+<span>Web Server</span>
+</div>
+</div>
+
+<h2>Conclusion</h2>
+<div class="card">
+<p>This project marked my first Industrial IoT implementation in a production environment. It combined embedded systems, wireless networking, RFID authentication, real-time communication, and production analytics into a single monitoring platform.</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Rizki Saputra Sembiring • Robotics & AI Engineer
+</footer>
+</body>
+</html>
