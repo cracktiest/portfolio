@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Power Monitoring System (1.2 kWp) | Rizki Saputra Sembiring</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;scroll-behavior:smooth;}
+body{background:#050816;color:white;line-height:1.7;}
+.container{width:90%;max-width:1100px;margin:auto;}
+header{padding:90px 0;background:linear-gradient(rgba(5,8,22,.92),rgba(5,8,22,.94)),url("https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1600&auto=format&fit=crop") center/cover;}
+.badge{display:inline-block;padding:8px 18px;border-radius:20px;background:#00ffff20;color:#5cf4ff;margin-bottom:20px;font-weight:600;}
+h1{font-size:54px;font-weight:800;margin-bottom:20px;}
+.subtitle{font-size:20px;color:#b8c2d4;max-width:800px;}
+.buttons{margin-top:40px;display:flex;gap:15px;flex-wrap:wrap;}
+.btn{padding:14px 24px;border-radius:14px;font-weight:700;text-decoration:none;transition:.3s;}
+.primary{background:#00ffff;color:black;}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white;}
+.btn:hover{transform:translateY(-3px);} 
+section{padding:80px 0;}
+h2{font-size:34px;margin-bottom:25px;}
+.card{background:#0e162b;padding:35px;border-radius:22px;border:1px solid rgba(255,255,255,.08);margin-bottom:30px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax:280px,1fr));gap:25px;}
+.stat{padding:30px;background:#111b31;border-radius:18px;text-align:center;}
+.stat h3{font-size:42px;color:#00ffff;}
+.timeline{border-left:3px solid #00ffff;padding-left:25px;}
+.timeline div{margin-bottom:35px;}
+.timeline h3{color:#00ffff;margin-bottom:10px;}
+.tech{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px;}
+.tech span{padding:8px 14px;border-radius:12px;background:#00ffff15;color:#7dfbff;}
+footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#94a3b8;}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="badge">Renewable Energy • Industrial IoT</div>
+<h1>Solar Power Monitoring System (1.2 kWp)</h1>
+<p class="subtitle">Developed and deployed a 1.2 kWp solar photovoltaic (PV) system to support renewable energy adoption within the manufacturing facility. The project included solar panel installation, inverter integration, electrical distribution, and a real-time monitoring platform that enables engineers to monitor energy generation, battery status, and inverter performance remotely using the Solar2MQTT system.</p>
+<div class="buttons">
+<a href="../../index.html#projects" class="btn primary">← Back to Portfolio</a>
+<a href="#details" class="btn secondary">Project Details</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<div class="grid">
+<div class="stat"><h3>1.2 kWp</h3><p>PV Capacity</p></div>
+<div class="stat"><h3>ESP8266</h3><p>Monitoring Controller</p></div>
+<div class="stat"><h3>MQTT</h3><p>Real-Time Data</p></div>
+</div>
+</div>
+</section>
+
+<section id="details">
+<div class="container">
+<h2>Overview</h2>
+<div class="card">
+<p>Developed and deployed a 1.2 kWp solar photovoltaic (PV) system to support renewable energy adoption within the manufacturing facility. The project included solar panel installation, inverter integration, electrical distribution, and a real-time monitoring platform that enables engineers to monitor energy generation, battery status, and inverter performance remotely using the Solar2MQTT system.</p>
+</div>
+
+<h2>Challenge</h2>
+<div class="card">
+<ul>
+<li>The company required a reliable renewable energy solution to reduce dependence on grid electricity while providing continuous visibility into solar energy production and system performance.</li>
+<li>Manual monitoring of inverter parameters made it difficult to evaluate system efficiency, detect abnormal conditions, and analyze long-term energy generation.</li>
+</ul>
+</div>
+
+<h2>Solution</h2>
+<div class="card">
+<div class="timeline">
+<div>
+<h3>PV System Installation</h3>
+Designed and installed a 1.2 kWp solar power system consisting of photovoltaic panels, an inverter, battery storage, and protection devices.</div>
+<div>
+<h3>Solar2MQTT Integration</h3>
+Integrated the inverter with Solar2MQTT running on an ESP8266 microcontroller for real-time data acquisition.</div>
+<div>
+<h3>Remote Monitoring</h3>
+Published operational data over MQTT for monitoring of solar panel voltage, battery status, AC output, grid status, temperature, and energy performance.</div>
+<div>
+<h3>Scalable Dashboard Integration</h3>
+Enabled integration with Node-RED, Home Assistant, and other Industrial IoT platforms for centralized energy management.</div>
+</div>
+</div>
+
+<h2>Result</h2>
+<div class="card">
+<ul>
+<li>Successfully installed and commissioned a 1.2 kWp solar energy system with continuous real-time monitoring.</li>
+<li>Improved system visibility and simplified maintenance activities.</li>
+<li>Enabled remote supervision of renewable energy generation and performance analysis.</li>
+</ul>
+</div>
+
+<h2>Engineering Highlights</h2>
+<div class="card">
+<ul>
+<li>Installed a 1.2 kWp photovoltaic power generation system.</li>
+<li>Integrated inverter communication with Solar2MQTT running on ESP8266.</li>
+<li>Implemented MQTT-based real-time monitoring for energy production and system health.</li>
+<li>Enabled remote monitoring of battery, inverter, solar generation, AC output, and grid status.</li>
+<li>Established a scalable monitoring architecture for Industrial IoT dashboards and smart factory platforms.</li>
+</ul>
+</div>
+
+<h2>Conclusion</h2>
+<div class="card">
+<p>This project expanded my experience in renewable energy systems, Industrial IoT, and energy monitoring. It strengthened my expertise in photovoltaic system integration, inverter communication, MQTT-based data acquisition, embedded systems, and real-time monitoring while demonstrating how open-source technologies can be utilized to build scalable and cost-effective smart energy solutions.</p>
+</div>
+
+<h2>Technologies</h2>
+<div class="card">
+<div class="tech">
+<span>Solar Photovoltaic (PV)</span>
+<span>1.2 kWp Solar System</span>
+<span>Hybrid Inverter</span>
+<span>Battery Storage</span>
+<span>ESP8266</span>
+<span>Solar2MQTT</span>
+<span>MQTT</span>
+<span>Industrial IoT</span>
+<span>Node-RED</span>
+<span>Home Assistant</span>
+<span>Renewable Energy</span>
+<span>Energy Monitoring</span>
+<span>Embedded System</span>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Rizki Saputra Sembiring • Robotics & AI Engineer
+</footer>
+</body>
+</html>
