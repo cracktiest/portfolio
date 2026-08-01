@@ -40,7 +40,7 @@ footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08)
 <div class="container">
 <div class="badge">Industrial IoT • Production Monitoring</div>
 <h1>Operator Production Monitoring System</h1>
-<p class="subtitle">Developed an IoT-based production monitoring system to collect real-time operator output and production status in garment manufacturing. The system integrates RFID authentication, wireless remote controls, and Wi-Fi communication to provide live production data, downtime tracking, and operator performance monitoring through a centralized server.</p>
+<p class="subtitle">Developed an IoT-based production monitoring system to collect real-time operator output and production status in garment manufacturing. The system integrates RFID authentication, wireless remote controls, and Wi-Fi communication to provide live production data, downtime tracking, lost time classification, and operator performance monitoring through a centralized server.</p>
 <div class="buttons">
 <a href="../../index.html#projects" class="btn primary">← Back to Portfolio</a>
 <a href="#details" class="btn secondary">Project Details</a>
@@ -82,15 +82,15 @@ footer{padding:40px;text-align:center;border-top:1px solid rgba(255,255,255,.08)
 <div class="timeline">
 <div>
 <h3>RFID Authentication</h3>
-Operators identify themselves using RFID cards before production begins, ensuring accurate operator tracking.
+Operators identify themselves using RFID cards before production begins, ensuring accurate operator tracking and secure login for each shift.
 </div>
 <div>
-<h3>Wireless Remote Control</h3>
-Production output is recorded through a wireless remote during operation.
+<h3>Operator Output Logging</h3>
+Production output is recorded through a wireless remote during operation, making it easy to add operator output directly to the system.
 </div>
 <div>
 <h3>Downtime Reporting</h3>
-Dedicated remote buttons allow operators to report downtime reasons such as machine breakdown, technical support, material shortage, personal needs, and layout changes.
+Dedicated remote buttons allow operators to report lost time reasons such as machine breakdown, personal needs (restroom), supply issues, technical support, and layout changes.
 </div>
 <div>
 <h3>ESP8266 + Wi-Fi Communication</h3>
@@ -107,10 +107,18 @@ Operators receive immediate visual feedback through an LCD display and RGB LED s
 <ul>
 <li>Successfully digitized operator production reporting.</li>
 <li>Enabled real-time monitoring of operator output and status.</li>
-<li>Implemented automatic downtime classification using remote input.</li>
+<li>Implemented lost time tracking for machine breakdowns, personal needs, supply issues, and other production interruptions.</li>
 <li>Reduced manual reporting effort and improved data accuracy.</li>
 <li>Provided supervisors with production visibility and historical records for analysis.</li>
 </ul>
+</div>
+
+<h2>Video Reference</h2>
+<div class="card">
+<p>Reference video showing how the operator production monitoring system works, including input bundle/tapping and output tapping with RFID card.</p>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:18px;margin-top:20px;background:#111b31;border:1px solid rgba(255,255,255,.08);">
+<iframe src="https://www.youtube.com/embed/hh6X9q9ET_o" title="Operator Production Monitoring System Reference" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+</div>
 </div>
 
 <h2>Technologies</h2>
@@ -135,10 +143,11 @@ Operators receive immediate visual feedback through an LCD display and RGB LED s
 </section>
 
 <footer>
+  © 2026 Rizki Saputra Sembiring • Robotics & Automation Engineer
+</footer>
 
 <script src="../../js/video-modal.js"></script>
 
-</body>
 </body>
 </html>
 

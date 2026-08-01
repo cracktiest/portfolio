@@ -239,6 +239,79 @@ section {
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
+.education-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.education-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+}
+
+.education-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 30px 0 10px;
+    flex-wrap: wrap;
+}
+
+.carousel-btn {
+    background: rgba(0,255,255,0.08);
+    border: 1px solid rgba(0,255,255,0.25);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background: rgba(0,255,255,0.18);
+    transform: translateY(-2px);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.12);
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.indicator.active {
+    background: #00ffff;
+    transform: scale(1.15);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.licenses-grid .license-card {
+    padding: 30px;
+}
+
 .experience-card h3,
 .education-card h3 {
     font-size: 28px;
