@@ -11,7 +11,19 @@
   <link rel="stylesheet" href="css/main.css">
   
 </head>
-<body>
+<body id="top">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand">RS</a>
+      <nav class="topnav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- HERO -->
   <section class="hero">
@@ -21,22 +33,39 @@
         <p class="subtitle">ROBOTICS • AI • AMR • AUTOMATION</p>
 
         <h1>
-          Rizki Saputra
+          Rizki Saputra<br>
           <span>Sembiring</span>
         </h1>
 
-        <p>
-          Senior Robotic Automation Engineer specializing in robotics,
-          AI vision systems, AMR technology, industrial automation,
-          embedded systems, and smart manufacturing solutions.
-          Passionate about designing futuristic Industry 4.0 & 5.0 systems
-          integrating robotic arms, autonomous mobile robots, and AI-driven factories.
+        <p class="hero-intro">
+          Senior robotic automation engineer building practical systems for smart factories,
+          autonomous mobility, industrial AI, and modern manufacturing operations.
         </p>
+
+        <div class="hero-note">
+          <strong>Open to Opportunities in Robotics, AI & Smart Manufacturing</strong>
+          <span>Interested in industry roles, research collaboration, and Master's programs.</span>
+        </div>
 
         <div class="hero-buttons">
           <a href="#projects" class="btn-primary">View Projects</a>
           <a href="mailto:rizkisaputrasembiring.rss@gmail.com" class="btn-secondary">Contact Me</a>
           <a href="asset/Resume%20RIZKI%20SAPUTRA%20SEMBIRING%20.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>19+</strong>
+            <span>Engineering projects</span>
+          </div>
+          <div>
+            <strong>4+</strong>
+            <span>Years leading automation</span>
+          </div>
+          <div>
+            <strong>90%</strong>
+            <span>Cost reduction on tracking platform</span>
+          </div>
         </div>
       </div>
 
@@ -72,43 +101,31 @@
   </section>
 
   <!-- ABOUT -->
-  <section>
-    <div class="container grid-2">
+  <section class="about-section" id="about">
+    <div class="container about-grid">
 
-      <div>
-        <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p class="section-eyebrow">About Me</p>
+        <h2 class="section-title">Building practical automation systems for factories, research, and modern manufacturing.</h2>
 
         <p class="text-muted">
           Senior Robotic Automation Engineer based in West Java, Indonesia,
           specializing in robotics, industrial AI systems, computer vision,
           IoT, AMR, embedded systems, and smart manufacturing technologies.
-          Passionate about Industry 4.0 & 5.0 transformation through
-          automation and intelligent systems integration.
         </p>
-
-        <br>
 
         <p class="text-muted">
-          Currently leading and supervising multidisciplinary engineering teams
-          focused on robotics, automation, AI, research, and industrial IoT.
-          Experienced in designing scalable automation architectures,
-          developing AI computer vision systems, integrating AMR technologies,
-          and delivering enterprise-scale smart manufacturing solutions.
+          I currently lead multidisciplinary engineering teams focused on robotics, automation,
+          AI, research, and industrial IoT, delivering end-to-end systems from concept to deployment.
         </p>
-      </div>
-
-      <div>
-        <h2 class="section-title">Skills & Technologies</h2>
 
         <div class="skills">
           <div class="skill">Robotics Engineering</div>
-          <!-- <div class="skill">Artificial Intelligence</div> -->
           <div class="skill">Computer Vision</div>
           <div class="skill">Industrial Automation</div>
           <div class="skill">AMR / AGV</div>
           <div class="skill">Industrial IoT</div>
           <div class="skill">Embedded Systems</div>
-          <!-- <div class="skill">ROS2</div> -->
           <div class="skill">Python</div>
           <div class="skill">Node-RED</div>
           <div class="skill">MQTT</div>
@@ -117,23 +134,38 @@
           <div class="skill">ESP32</div>
           <div class="skill">RFID</div>
           <div class="skill">Fullstack Development</div>
-          <div class="skill">Industrial Networking</div>
           <div class="skill">PLC Integration</div>
           <div class="skill">Smart Factory</div>
           <div class="skill">Cross-functional Leadership</div>
-          <div class="skill">Automation Architecture</div>
-          <div class="skill">Machine Vision</div>
-          <div class="skill">Cloud Integration</div>
-          <div class="skill">CBTC & Railway Systems</div>
         </div>
       </div>
+
+      <div class="info-stack">
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Research Focus</h3>
+            <p>Closed-loop control, applied computer vision, autonomous mobile robotics, and Industry 4.0 / 5.0 systems integration.</p>
+          </article>
+          <article class="info-card">
+            <h3>Current Role</h3>
+            <p>Robotic & Development Supervisor at PT Gistex Garmen Indonesia, guiding multidisciplinary engineering teams.</p>
+          </article>
+          <article class="info-card">
+            <h3>Impact</h3>
+            <p>Expanded AMR fleet growth from 5 robots to more than 15 while reducing tracking costs by more than 90%.</p>
+          </article>
+          <article class="info-card">
+            <h3>Study Path</h3>
+            <p>Preparing for graduate-level research and master's study in robotics, AI, and smart manufacturing.</p>
+          </article>
+        </div>
       </div>
 
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="experience">
+  <section class="experience" id="experience">
     <div class="container">
       <h2 class="section-title">Professional Experience</h2>
 
@@ -223,319 +255,355 @@
 
         
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="Garment Sewing Automation Development Program" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/industrial-sewing-automation/index.html" class="project-card-link">
+          <div class="project-card project-bg-sewing">
+            <h3>Garment Sewing Automation Development Program</h3>
 
-          <h3><a href="project/industrial-sewing-automation/index.html" class="section-link">Garment Sewing Automation Development Program</a></h3>
+            <p>
+              Scalable internal automation platform for garment sewing lines, expanded into pneumatic pocket setters, overlock automation, drawstring bartack systems, and custom sewing machine solutions.
+            </p>
 
-          <p>
-            Scalable internal automation platform for garment sewing lines, expanded into pneumatic pocket setters, overlock automation, drawstring bartack systems, and custom sewing machine solutions.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Developed flexible embedded control systems, pneumatic fixtures, sensor-driven machine sequences, and scalable automation concepts for garment manufacturing.
+            </p>
 
-          <p class="text-muted">
-            Developed flexible embedded control systems, pneumatic fixtures, sensor-driven machine sequences, and scalable automation concepts for garment manufacturing.
-          </p>
+            <div class="tech-stack">
+              <span>Industrial Automation</span>
+              <span>Embedded Systems</span>
+              <span>Pneumatics</span>
+              <span>Machine Development</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Industrial Automation</span>
-            <span>Embedded Systems</span>
-            <span>Pneumatics</span>
-            <span>Machine Development</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="Operator Production Monitoring System" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/operator-production-monitoring-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-monitoring">
+            <h3>Operator Production Monitoring System</h3>
 
-          <h3><a href="project/operator-production-monitoring-system/index.html" class="section-link">Operator Production Monitoring System</a></h3>
+            <p>
+              IoT-based monitoring platform for real-time operator output tracking, downtime classification, and production visibility across garment manufacturing lines.
+            </p>
 
-          <p>
-            IoT-based monitoring platform for real-time operator output tracking, downtime classification, and production visibility across garment manufacturing lines.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Built around ESP8266, RFID authentication, wireless remotes, Wi-Fi communication, and centralized production reporting.
+            </p>
 
-          <p class="text-muted">
-            Built around ESP8266, RFID authentication, wireless remotes, Wi-Fi communication, and centralized production reporting.
-          </p>
+            <div class="tech-stack">
+              <span>Industrial IoT</span>
+              <span>ESP8266</span>
+              <span>RFID</span>
+              <span>Production Monitoring</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Industrial IoT</span>
-            <span>ESP8266</span>
-            <span>RFID</span>
-            <span>Production Monitoring</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="Productivity Monitoring System (MES)" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/productivity-monitoring-system-mes/index.html" class="project-card-link">
+          <div class="project-card project-bg-mes">
+            <h3>Productivity Monitoring System (MES)</h3>
 
-          <h3><a href="project/productivity-monitoring-system-mes/index.html" class="section-link">Productivity Monitoring System (MES)</a></h3>
+            <p>
+              Manufacturing Execution System dashboard for centralized production monitoring, operator productivity tracking, and real-time line performance analysis.
+            </p>
 
-          <p>
-            Manufacturing Execution System dashboard for centralized production monitoring, operator productivity tracking, and real-time line performance analysis.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Maintained and enhanced an existing C# application that connected IoT devices to the central database for live manufacturing visibility.
+            </p>
 
-          <p class="text-muted">
-            Maintained and enhanced an existing C# application that connected IoT devices to the central database for live manufacturing visibility.
-          </p>
+            <div class="tech-stack">
+              <span>MES</span>
+              <span>C#</span>
+              <span>Production Monitoring</span>
+              <span>Database Integration</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>MES</span>
-            <span>C#</span>
-            <span>Production Monitoring</span>
-            <span>Database Integration</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <h3><a href="project/sewing-machine-automatic-cutter-production-data-integration/index.html" class="section-link">Industrial Machine Data Acquisition & Database Integration</a></h3>
+        <a href="project/sewing-machine-automatic-cutter-production-data-integration/index.html" class="project-card-link">
+          <div class="project-card project-bg-data">
+            <h3>Industrial Machine Data Acquisition & Database Integration</h3>
 
-          <p>
-            Developed machine data acquisition and database integration systems for industrial equipment, enabling production and machine performance data to be collected, stored, and made available for monitoring and analysis.
-          </p>
+            <p>
+              Developed machine data acquisition and database integration systems for industrial equipment, enabling production and machine performance data to be collected, stored, and made available for monitoring and analysis.
+            </p>
 
-          <br>
+            <br>
 
-          <p class="text-muted">
-            Integrated Pattern Seamer, Bullmer automatic cutter, and Needle Manager data into a structured database layer for machine monitoring, production traceability, and inventory accountability.
-          </p>
+            <p class="text-muted">
+              Integrated Pattern Seamer, Bullmer automatic cutter, and Needle Manager data into a structured database layer for machine monitoring, production traceability, and inventory accountability.
+            </p>
 
-          <div class="tech-stack">
-            <span>Industrial IoT</span>
-            <span>Data Acquisition</span>
-            <span>Database Integration</span>
-            <span>Smart Manufacturing</span>
+            <div class="tech-stack">
+              <span>Industrial IoT</span>
+              <span>Data Acquisition</span>
+              <span>Database Integration</span>
+              <span>Smart Manufacturing</span>
+            </div>
+
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1581092919535-9aa8c1227347?q=80&w=1200&auto=format&fit=crop" alt="Automatic Elastic Cutting Machine" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/automatic-elastic-cutting-machine/index.html" class="project-card-link">
+          <div class="project-card project-bg-elastic">
+            <h3>Automatic Elastic Cutting Machine</h3>
 
-          <h3><a href="project/automatic-elastic-cutting-machine/index.html" class="section-link">Automatic Elastic Cutting Machine</a></h3>
+            <p>
+              Embedded automation system for automatic elastic feeding, precision cutting, and production quantity control in garment manufacturing.
+            </p>
 
-          <p>
-            Embedded automation system for automatic elastic feeding, precision cutting, and production quantity control in garment manufacturing.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Designed to replace manual cutting with a reliable sequence-based system using stepper motor control, pneumatic actuation, and power-loss recovery.
+            </p>
 
-          <p class="text-muted">
-            Designed to replace manual cutting with a reliable sequence-based system using stepper motor control, pneumatic actuation, and power-loss recovery.
-          </p>
+            <div class="tech-stack">
+              <span>Embedded System</span>
+              <span>Stepper Motor</span>
+              <span>Pneumatic Actuator</span>
+              <span>Industrial Automation</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Embedded System</span>
-            <span>Stepper Motor</span>
-            <span>Pneumatic Actuator</span>
-            <span>Industrial Automation</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1581092919535-9aa8c1227347?q=80&w=1200&auto=format&fit=crop" alt="Automatic Elastic Cutting Machine (PID Version)" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/automatic-elastic-cutting-machine-pid-version/index.html" class="project-card-link">
+          <div class="project-card project-bg-pid">
+            <h3>Automatic Elastic Cutting Machine (PID Version)</h3>
 
-          <h3><a href="project/automatic-elastic-cutting-machine-pid-version/index.html" class="section-link">Automatic Elastic Cutting Machine (PID Version)</a></h3>
+            <p>
+              Closed-loop motion control upgrade for precise elastic feeding and higher cutting accuracy during continuous production.
+            </p>
 
-          <p>
-            Closed-loop motion control upgrade for precise elastic feeding and higher cutting accuracy during continuous production.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Replaced the open-loop system with encoder feedback and PID control, while simplifying operation through an infrared remote interface.
+            </p>
 
-          <p class="text-muted">
-            Replaced the open-loop system with encoder feedback and PID control, while simplifying operation through an infrared remote interface.
-          </p>
+            <div class="tech-stack">
+              <span>Motion Control</span>
+              <span>PID Control</span>
+              <span>Encoder Feedback</span>
+              <span>Industrial Automation</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Motion Control</span>
-            <span>PID Control</span>
-            <span>Encoder Feedback</span>
-            <span>Industrial Automation</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop" alt="AMR Deployment & Fleet Expansion" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/amr-deployment-fleet-expansion/index.html" class="project-card-link">
+          <div class="project-card project-bg-amr">
+            <h3>AMR Deployment & Fleet Expansion</h3>
 
-          <h3><a href="project/amr-deployment-fleet-expansion/index.html" class="section-link">AMR Deployment & Fleet Expansion</a></h3>
+            <p>
+              Supported deployment, maintenance, and continuous operation of AMRs for material handling and internal logistics in a garment manufacturing facility.
+            </p>
 
-          <p>
-            Supported deployment, maintenance, and continuous operation of AMRs for material handling and internal logistics in a garment manufacturing facility.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Contributed to factory mapping, navigation optimization, preventive maintenance, and fleet growth from 5 robots to more than 15 within two years.
+            </p>
 
-          <p class="text-muted">
-            Contributed to factory mapping, navigation optimization, preventive maintenance, and fleet growth from 5 robots to more than 15 within two years.
-          </p>
+            <div class="tech-stack">
+              <span>AMR</span>
+              <span>Industrial Robotics</span>
+              <span>Navigation</span>
+              <span>Fleet Management</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>AMR</span>
-            <span>Industrial Robotics</span>
-            <span>Navigation</span>
-            <span>Fleet Management</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Restaurant Service Robot Deployment" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/restaurant-service-robot-deployment/index.html" class="project-card-link">
+          <div class="project-card project-bg-service">
+            <h3>Restaurant Service Robot Deployment</h3>
 
-          <h3><a href="project/restaurant-service-robot-deployment/index.html" class="section-link">Restaurant Service Robot Deployment</a></h3>
+            <p>
+              Deployed three service robots at Omah Mode Bandung to support autonomous food delivery routes, table mapping, and staff operation training.
+            </p>
 
-          <p>
-            Deployed three service robots at Omah Mode Bandung to support autonomous food delivery routes, table mapping, and staff operation training.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Implemented on-site robot setup, workflow integration, and operator training for reliable restaurant service automation.
+            </p>
 
-          <p class="text-muted">
-            Implemented on-site robot setup, workflow integration, and operator training for reliable restaurant service automation.
-          </p>
+            <div class="tech-stack">
+              <span>Service Robotics</span>
+              <span>AMR</span>
+              <span>Robot Deployment</span>
+              <span>Hospitality Automation</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Service Robotics</span>
-            <span>AMR</span>
-            <span>Robot Deployment</span>
-            <span>Hospitality Automation</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop" alt="Autonomous Robot Fleet Management System" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/autonomous-robot-fleet-management-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-fleet">
+            <h3>Autonomous Robot Fleet Management System</h3>
 
-          <h3><a href="project/autonomous-robot-fleet-management-system/index.html" class="section-link">Autonomous Robot Fleet Management System</a></h3>
+            <p>
+              Built a custom fleet management platform for real-time AMR monitoring, analytics, and integration with factory workflows.
+            </p>
 
-          <p>
-            Built a custom fleet management platform for real-time AMR monitoring, analytics, and integration with factory workflows.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Integrated robot SDK and REST APIs to deliver live robot locations, task history, charging status, idle time tracking, and dispatch capabilities.
+            </p>
 
-          <p class="text-muted">
-            Integrated robot SDK and REST APIs to deliver live robot locations, task history, charging status, idle time tracking, and dispatch capabilities.
-          </p>
+            <div class="tech-stack">
+              <span>Fleet Management</span>
+              <span>AMR</span>
+              <span>SDK & API</span>
+              <span>Real-Time Dashboard</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Fleet Management</span>
-            <span>AMR</span>
-            <span>SDK & API</span>
-            <span>Real-Time Dashboard</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Laser Positioning Assistance System" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/laser-positioning-assistance-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-laser">
+            <h3>Laser Positioning Assistance System</h3>
 
-          <h3><a href="project/laser-positioning-assistance-system/index.html" class="section-link">Laser Positioning Assistance System</a></h3>
+            <p>
+              Developed laser-based positioning systems that projected alignment guides onto sewing workstations to improve consistency and reduce setup time.
+            </p>
 
-          <p>
-            Developed laser-based positioning systems that projected alignment guides onto sewing workstations to improve consistency and reduce setup time.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Delivered a low-cost automation solution that improved operator productivity and product quality without replacing existing equipment.
+            </p>
 
-          <p class="text-muted">
-            Delivered a low-cost automation solution that improved operator productivity and product quality without replacing existing equipment.
-          </p>
+            <div class="tech-stack">
+              <span>Industrial Automation</span>
+              <span>Production Assistance</span>
+              <span>Laser Guidance</span>
+              <span>Operator Support</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Industrial Automation</span>
-            <span>Production Assistance</span>
-            <span>Laser Guidance</span>
-            <span>Operator Support</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1517048676731-e8b4f92f9b19?q=80&w=1200&auto=format&fit=crop" alt="Sleeve Placket Automation Machine" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/sleeve-placket-automation-machine/index.html" class="project-card-link">
+          <div class="project-card project-bg-sleeve">
+            <h3>Sleeve Placket Automation Machine</h3>
 
-          <h3><a href="project/sleeve-placket-automation-machine/index.html" class="section-link">Sleeve Placket Automation Machine</a></h3>
+            <p>
+              Cost-effective automation solution that transformed a standard Jooke AMS sewing machine into a dedicated sleeve placket machine.
+            </p>
 
-          <p>
-            Cost-effective automation solution that transformed a standard Jooke AMS sewing machine into a dedicated sleeve placket machine.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Integrated pneumatic actuators, servo mechanisms, sensors, and an Arduino-based controller to automate sewing operations and reduce manual handling.
+            </p>
 
-          <p class="text-muted">
-            Integrated pneumatic actuators, servo mechanisms, sensors, and an Arduino-based controller to automate sewing operations and reduce manual handling.
-          </p>
+            <div class="tech-stack">
+              <span>Industrial Automation</span>
+              <span>SPM</span>
+              <span>Pneumatic Actuator</span>
+              <span>Servo System</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Industrial Automation</span>
-            <span>SPM</span>
-            <span>Pneumatic Actuator</span>
-            <span>Servo System</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <h3><a href="project/automatic-button-counting-machine/index.html" class="section-link">Automatic Button Counting Machine</a></h3>
+        <a href="project/automatic-button-counting-machine/index.html" class="project-card-link">
+          <div class="project-card project-bg-button">
+            <h3>Automatic Button Counting Machine</h3>
 
-          <p>
-            Embedded automation system designed to count buttons automatically before sewing using centrifugal feeding and infrared sensing.
-          </p>
+            <p>
+              Embedded automation system designed to count buttons automatically before sewing using centrifugal feeding and infrared sensing.
+            </p>
 
-          <br>
+            <br>
 
-          <p class="text-muted">
-            Used an Arduino controller, stepper motor, and infrared sensor to improve counting accuracy and reduce manual workload.
-          </p>
+            <p class="text-muted">
+              Used an Arduino controller, stepper motor, and infrared sensor to improve counting accuracy and reduce manual workload.
+            </p>
 
-          <div class="tech-stack">
-            <span>Industrial Automation</span>
-            <span>Embedded System</span>
-            <span>Stepper Motor</span>
-            <span>Infrared Sensor</span>
+            <div class="tech-stack">
+              <span>Industrial Automation</span>
+              <span>Embedded System</span>
+              <span>Stepper Motor</span>
+              <span>Infrared Sensor</span>
+            </div>
+
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <h3><a href="project/sewing-pattern-projection-system/index.html" class="section-link">Sewing Pattern Projection System</a></h3>
+        <a href="project/sewing-pattern-projection-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-projection">
+            <h3>Sewing Pattern Projection System</h3>
 
-          <p>
-            Digital sewing pattern projection system for PT Gistex Garmen Indonesia, replacing printed templates with projected cutting lines on fabric.
-          </p>
+            <p>
+              Digital sewing pattern projection system for PT Gistex Garmen Indonesia, replacing printed templates with projected cutting lines on fabric.
+            </p>
 
-          <br>
+            <br>
 
-          <p class="text-muted">
-            Reduced paper use, accelerated sample prep, and simplified revisions through accurate projector calibration and workstation optimization.
-          </p>
+            <p class="text-muted">
+              Reduced paper use, accelerated sample prep, and simplified revisions through accurate projector calibration and workstation optimization.
+            </p>
 
-          <div class="tech-stack">
-            <span>Projection Technology</span>
-            <span>Smart Manufacturing</span>
-            <span>Industrial Automation</span>
-            <span>Process Digitalization</span>
+            <div class="tech-stack">
+              <span>Projection Technology</span>
+              <span>Smart Manufacturing</span>
+              <span>Industrial Automation</span>
+              <span>Process Digitalization</span>
+            </div>
+
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <h3><a href="project/collaborative-robotic-arm-garment-manufacturing/index.html" class="section-link">Collaborative Robotic Arm for Garment Manufacturing</a></h3>
+        <a href="project/collaborative-robotic-arm-garment-manufacturing/index.html" class="project-card-link">
+          <div class="project-card project-bg-cobot">
+            <h3>Collaborative Robotic Arm for Garment Manufacturing</h3>
 
-          <p>
-            Collaborative robotic applications for automatic inner box handling, template sheet handling, and steam ironing automation in garment manufacturing.
-          </p>
+            <p>
+              Collaborative robotic applications for automatic inner box handling, template sheet handling, and steam ironing automation in garment manufacturing.
+            </p>
 
-          <br>
+            <br>
 
-          <p class="text-muted">
-            Integrated custom end-effectors, fixtures, sensors, pneumatic devices, and industrial control systems to support safe human-robot collaboration and improve production consistency.
-          </p>
+            <p class="text-muted">
+              Integrated custom end-effectors, fixtures, sensors, pneumatic devices, and industrial control systems to support safe human-robot collaboration and improve production consistency.
+            </p>
 
-          <div class="tech-stack">
-            <span>Industrial Robotics</span>
-            <span>Smart Manufacturing</span>
-            <span>Collaborative Robot</span>
-            <span>Automation</span>
+            <div class="tech-stack">
+              <span>Industrial Robotics</span>
+              <span>Smart Manufacturing</span>
+              <span>Collaborative Robot</span>
+              <span>Automation</span>
+            </div>
+
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
         <!-- <div class="project-card">
           <h3><a href="project/rfid-garment-tracking-system/index.html" class="section-link">RFID Garment Tracking System</a></h3>
@@ -557,123 +625,139 @@
             <span>Smart Manufacturing</span>
           </div>
         </div> -->
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="RFID Tracking" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/rfid-garment-tracking-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-rfid">
+            <h3>RFID Garment Tracking</h3>
 
-          <h3><a href="project/rfid-garment-tracking-system/index.html" class="section-link">RFID Garment Tracking</a></h3>
+            <p>
+              Smart RFID garment tracking system developed for real-time production monitoring,
+              bundle tracking, and manufacturing traceability across garment production workflows.
+            </p>
 
-          <p>
-            Smart RFID garment tracking system developed for real-time production monitoring,
-            bundle tracking, and manufacturing traceability across garment production workflows.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Built with significantly lower implementation cost compared to enterprise competitors,
+              reducing system investment from more than 1 billion IDR to under 100 million IDR.
+            </p>
 
-          <p class="text-muted">
-            Built with significantly lower implementation cost compared to enterprise competitors,
-            reducing system investment from more than 1 billion IDR to under 100 million IDR.
-          </p>
+            <div class="tech-stack">
+              <span>RFID</span>
+              <span>Node-RED</span>
+              <span>Industrial IoT</span>
+              <span>Automation</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>RFID</span>
-            <span>Node-RED</span>
-            <span>Industrial IoT</span>
-            <span>Automation</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
         
-        <div class="project-card">
-          <h3><a href="project/batch-tracking-system/index.html" class="section-link">Batch Tracking System</a></h3>
+        <a href="project/batch-tracking-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-batch">
+            <h3>Batch Tracking System</h3>
 
-          <p>
-            Centralized production management platform combining batch workflow control with RFID-enabled garment tracking for scalable manufacturing execution.
-          </p>
+            <p>
+              Centralized production management platform combining batch workflow control with RFID-enabled garment tracking for scalable manufacturing execution.
+            </p>
 
-          <br>
+            <br>
 
-          <p class="text-muted">
-            Managed production batches from cutting to finishing while providing status monitoring, WIP visibility, dashboards, and historical reporting.
-          </p>
+            <p class="text-muted">
+              Managed production batches from cutting to finishing while providing status monitoring, WIP visibility, dashboards, and historical reporting.
+            </p>
 
-          <div class="tech-stack">
-            <span>Manufacturing Execution</span>
-            <span>Production Management</span>
-            <span>RFID</span>
-            <span>MES</span>
+            <div class="tech-stack">
+              <span>Manufacturing Execution</span>
+              <span>Production Management</span>
+              <span>RFID</span>
+              <span>MES</span>
+            </div>
+
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <h3><a href="project/solar-power-monitoring-system-12kwp/index.html" class="section-link">Solar Power Monitoring System (1.2 kWp)</a></h3>
+        <a href="project/solar-power-monitoring-system-12kwp/index.html" class="project-card-link">
+          <div class="project-card project-bg-solar">
+            <h3>Solar Power Monitoring System (1.2 kWp)</h3>
 
-          <p>
-            1.2 kWp solar PV system with real-time monitoring for energy generation, battery status, inverter performance, and remote system visibility.
-          </p>
+            <p>
+              1.2 kWp solar PV system with real-time monitoring for energy generation, battery status, inverter performance, and remote system visibility.
+            </p>
 
-          <br>
+            <br>
 
-          <p class="text-muted">
-            Integrated Solar2MQTT on ESP8266 with MQTT-based dashboards for renewable energy monitoring and scalable Industrial IoT deployment.
-          </p>
+            <p class="text-muted">
+              Integrated Solar2MQTT on ESP8266 with MQTT-based dashboards for renewable energy monitoring and scalable Industrial IoT deployment.
+            </p>
 
-          <div class="tech-stack">
-            <span>Renewable Energy</span>
-            <span>Industrial IoT</span>
-            <span>ESP8266</span>
-            <span>MQTT</span>
+            <div class="tech-stack">
+              <span>Renewable Energy</span>
+              <span>Industrial IoT</span>
+              <span>ESP8266</span>
+              <span>MQTT</span>
+            </div>
+
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <h3><a href="project/industrial-air-pressure-monitoring-system/index.html" class="section-link">Industrial Air Pressure Monitoring System</a></h3>
+        <a href="project/industrial-air-pressure-monitoring-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-pressure">
+            <h3>Industrial Air Pressure Monitoring System</h3>
 
-          <p>
-            Real-time compressed air pressure monitoring for Duck Down Filling Machines using MQTT and embedded sensor telemetry.
-          </p>
+            <p>
+              Real-time compressed air pressure monitoring for Duck Down Filling Machines using MQTT and embedded sensor telemetry.
+            </p>
 
-          <br>
+            <br>
 
-          <p class="text-muted">
-            Delivered continuous pressure visibility, early abnormality detection, and lower network load with MQTT-based monitoring.
-          </p>
+            <p class="text-muted">
+              Delivered continuous pressure visibility, early abnormality detection, and lower network load with MQTT-based monitoring.
+            </p>
 
-          <div class="tech-stack">
-            <span>Industrial IoT</span>
-            <span>MQTT</span>
-            <span>Embedded Systems</span>
-            <span>Condition Monitoring</span>
+            <div class="tech-stack">
+              <span>Industrial IoT</span>
+              <span>MQTT</span>
+              <span>Embedded Systems</span>
+              <span>Condition Monitoring</span>
+            </div>
+
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project-card">
-          <!-- <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="CTP Machine Speed Control & Length Monitoring System" style="width:100%; border-radius:20px; margin-bottom:20px; height:220px; object-fit:cover;"> -->
+        <a href="project/ctp-machine-speed-control-length-monitoring-system/index.html" class="project-card-link">
+          <div class="project-card project-bg-ctp">
+            <h3>CTP Machine Speed Control & Length Monitoring System</h3>
 
-          <h3><a href="project/ctp-machine-speed-control-length-monitoring-system/index.html" class="section-link">CTP Machine Speed Control & Length Monitoring System</a></h3>
+            <p>
+              Closed-loop control system for a CTP sweetener machine that automatically regulated motor speed and monitored processed paper length in real time.
+            </p>
 
-          <p>
-            Closed-loop control system for a CTP sweetener machine that automatically regulated motor speed and monitored processed paper length in real time.
-          </p>
+            <br>
 
-          <br>
+            <p class="text-muted">
+              Final thesis project with rotary encoder feedback, VSD-based speed control, and SD card data logging for production performance analysis.
+            </p>
 
-          <p class="text-muted">
-            Final thesis project with rotary encoder feedback, VSD-based speed control, and SD card data logging for production performance analysis.
-          </p>
+            <div class="tech-stack">
+              <span>Industrial Automation</span>
+              <span>Control System</span>
+              <span>Embedded System</span>
+              <span>Motor Control</span>
+            </div>
 
-          <div class="tech-stack">
-            <span>Industrial Automation</span>
-            <span>Control System</span>
-            <span>Embedded System</span>
-            <span>Motor Control</span>
+            <div class="case-study-link">Open Case Study →</div>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section class="education">
+  <section class="education" id="credentials">
     <div class="container">
       <h2 class="section-title">Education</h2>
 
@@ -855,114 +939,97 @@
 
       <h2 class="section-title">Awards & Achievements</h2>
 
-      <div class="card education-card">
-        <h3>Stakeholder Representative – Accreditation Assessment</h3>
-        <p class="text-muted">2025 • ITERA</p>
+      <div class="card education-card awards-stack">
+        <div class="award-item">
+          <div>
+            <h3>Stakeholder Representative – Accreditation Assessment</h3>
+            <p class="text-muted">2025 • ITERA</p>
+          </div>
+          <p>Selected as stakeholder representative during accreditation assessment activities, contributing professional insights from industrial engineering and technology sectors.</p>
+        </div>
 
-        <br>
+        <div class="award-item">
+          <div>
+            <h3>Best Employee</h3>
+            <p class="text-muted">2024 • PT Gistex</p>
+          </div>
+          <p>Recognized for innovation, leadership, industrial automation initiatives, and contributions to digital transformation projects.</p>
+        </div>
 
-        <p>
-          Selected as stakeholder representative during accreditation assessment activities,
-          contributing professional insights from industrial engineering and technology sectors.
-        </p>
+        <div class="award-item">
+          <div>
+            <h3>Best Graduate - Electrical Engineering Undergraduate Program</h3>
+            <p class="text-muted">2020 • Universitas Muria Kudus</p>
+          </div>
+          <p>Awarded for outstanding academic achievement, engineering performance, and research contribution during undergraduate studies.</p>
+        </div>
 
-        <br><br>
+        <div class="award-item">
+          <div>
+            <h3>Academic Achievement Improvement Scholarship</h3>
+            <p class="text-muted">2018 • Universitas Muria Kudus</p>
+          </div>
+          <p>Scholarship recipient recognized for continuous academic excellence and performance improvement throughout engineering studies.</p>
+        </div>
 
-        <h3>Best Employee</h3>
-        <p class="text-muted">2024 • PT Gistex</p>
-
-        <br>
-
-        <p>
-          Recognized for innovation, leadership, industrial automation initiatives,
-          and contributions to digital transformation projects.
-        </p>
-
-        <br><br>
-
-        <h3>Best Graduate - Electrical Engineering Undergraduate Program</h3>
-        <p class="text-muted">2020 • Universitas Muria Kudus</p>
-
-        <br>
-
-        <p>
-          Awarded for outstanding academic achievement,
-          engineering performance, and research contribution during undergraduate studies.
-        </p>
-
-        <br><br>
-
-        <h3>Academic Achievement Improvement Scholarship</h3>
-        <p class="text-muted">2018 • Universitas Muria Kudus</p>
-
-        <br>
-
-        <p>
-          Scholarship recipient recognized for continuous academic excellence
-          and performance improvement throughout engineering studies.
-        </p>
-
-        <br><br>
-
-        <h3>Highest Test Score of Electrical Engineering Admission</h3>
-        <p class="text-muted">2016 • Universitas Muria Kudus</p>
-
-        <br>
-
-        <p>
-          Achieved the highest entrance examination score
-          for the Electrical Engineering program admission.
-        </p>
+        <div class="award-item">
+          <div>
+            <h3>Highest Test Score of Electrical Engineering Admission</h3>
+            <p class="text-muted">2016 • Universitas Muria Kudus</p>
+          </div>
+          <p>Achieved the highest entrance examination score for the Electrical Engineering program admission.</p>
+        </div>
       </div>
 
       <br><br>
 
       <h2 class="section-title">Languages</h2>
 
-      <div class="card education-card">
-        <h3>Bahasa Indonesia</h3>
-        <p class="text-muted">Native / Bilingual</p>
-
-        <br>
-
-        <h3>English</h3>
-        <p class="text-muted">Professional Working Proficiency</p>
-
-        <br>
-
-        <h3>Spanish</h3>
-        <p class="text-muted">Elementary</p>
+      <div class="card education-card language-grid">
+        <div class="language-pill">
+          <h3>Bahasa Indonesia</h3>
+          <p class="text-muted">Native / Bilingual</p>
+        </div>
+        <div class="language-pill">
+          <h3>English</h3>
+          <p class="text-muted">Professional Working Proficiency</p>
+        </div>
+        <div class="language-pill">
+          <h3>Spanish</h3>
+          <p class="text-muted">Elementary</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
+      <div class="contact-panel">
+        <p class="section-eyebrow">Let’s connect</p>
+        <h2>
+          Let's Build
+          <span>Future Automation</span>
+        </h2>
 
-      <h2>
-        Let's Build
-        <span>Future Automation</span>
-      </h2>
+        <p>
+          Open for collaboration in robotics, AI systems, industrial automation,
+          smart manufacturing, computer vision, and embedded technology projects.
+        </p>
 
-      <p>
-        Open for collaboration in robotics, AI systems, industrial automation,
-        smart manufacturing, computer vision, and embedded technology projects.
-      </p>
+        <div class="contact-buttons">
+          <a href="mailto:rizkisaputrasembiring.rss@gmail.com" class="btn-primary">Email Me</a>
+          <a href="asset/Resume%20RIZKI%20SAPUTRA%20SEMBIRING%20.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Resume</a>
 
-      <div class="contact-buttons">
-        <a href="mailto:rizkisaputrasembiring.rss@gmail.com" class="btn-primary">Email Me</a>
-        <a href="asset/Resume%20RIZKI%20SAPUTRA%20SEMBIRING%20.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://github.com/cracktiest" target="_blank" class="btn-secondary">
+            GitHub
+          </a>
 
-        <a href="https://github.com/cracktiest" target="_blank" class="btn-secondary">
-          GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/rizkisaputrasembiring/" target="_blank" class="btn-secondary">
-          LinkedIn
-        </a>
+          <a href="https://www.linkedin.com/in/rizkisaputrasembiring/" target="_blank" class="btn-secondary">
+            LinkedIn
+          </a>
+        </div>
       </div>
-
     </div>
   </section>
 
